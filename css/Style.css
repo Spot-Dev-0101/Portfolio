@@ -1,0 +1,418 @@
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Code Pro', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #34495E;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#main{
+    overflow: hidden;
+}
+
+.header_main{
+    height: 100vh;
+}
+
+.header_main.breakdown{
+    height: 25vh;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.15s;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+}
+
+a:hover{
+    transition: 0.15s;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(255,255,255,1);
+    box-shadow: 0px 4px 0px 0px rgba(255,255,255,1);
+}
+
+
+.header_background{
+    position: absolute;
+    background-color: #2980B9;
+    height: 50vh;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.header_background.breakdown{
+    height: 15vh;
+}
+
+.header_back_home{
+    position: absolute;
+    top: 6.5vh;
+    left: 7.5vh;
+}
+
+.header_back_prev{
+    position: absolute;
+    top: 11vh;
+    left:40%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header_back_next{
+    position: absolute;
+    top: 11vh;
+    right:40%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+
+.header_title{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50vh;
+    font-size: 50px;
+}
+
+.header_title.breakdown{
+    line-height: 15vh;
+}
+
+#header_desc{
+    position: relative;
+    text-align: center;
+    bottom: 20vh;
+}
+
+
+.arrow{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.arrow.header{
+    border-top: 50px solid #2980B9;
+    margin: 0 auto;
+}
+
+.arrow.header.bottom{
+    border-top: 50px solid #34495E;
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left: 0;
+    right: 0;
+}
+
+#header_images{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#header_images > a > img{
+    height: 150px;
+    width: 150px;
+}
+
+.header_images_title{
+    margin-bottom: 15px;
+    width: 150px;
+    height: 5vh;
+    text-align: center;
+}
+
+@media (max-width: 35em) {
+    .project_main{
+        height: 150vh;
+        display: grid;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+            "title"
+            "tags"
+            "image"
+            "desc"
+            "next";
+    }
+}
+
+@media (min-width: 50em) {
+    .project_main{
+        height: 101vh;
+        display: grid;
+        grid-auto-rows: minmax(25px, auto);
+        grid-template-areas: 
+            "title title"
+            "tags tags"
+            "image desc"
+            "next next";
+    }
+}
+
+
+
+.project{
+    margin: 5vh;
+}
+
+.project_backgroud{
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+.project.image{
+    grid-area: image;
+    width: 45vw;
+}
+
+.project.title{
+    margin-top: 10vh;
+    grid-area: title;
+    text-align: center;
+}
+
+.project.desc{
+    grid-area: desc;
+    margin-top: 10vh;
+    opacity: 0;
+}
+
+.project.next{
+    grid-area: next;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    width: 150px;
+}
+
+.project_tags{
+    grid-area: tags;
+    margin-top: -25px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project_tag{
+    text-align: center;
+    height: 25px;
+    border-radius: 50px;
+    margin: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.project_tag.unity{
+    background-color: #7f8c8d;
+}
+
+.project_tag.csharp{
+    background-color: #d35400;
+}
+
+.project_tag.java{
+    background-color: #00b894;
+}
+
+.project_tag.js{
+    background-color: #0984e3;
+}
+
+.project_tag.python{
+    background-color: #e84393;
+}
+
+.project_tag.swift{
+    background-color: #636e72;
+}
+
+.project_tag.xcode{
+    background-color: #EA2027;
+}
+
+.project_tag.tf{
+    background-color: #009432;
+}
+
+.project_tag.ue{
+    background-color: #868686;
+}
+
+.project_tag.cpp{
+    background-color: #390094;
+}
+
+.project_tag.vr{
+    background-color: #003494;
+}
+
+.project_tag.android{
+    background-color: #00b80f;
+}
+
+.project_tag.cinematic{
+    background-color: #b80099;
+}
+
+.text_comment{
+    color: #8dc891;
+}
+
+.project_movingImage{
+    position: absolute;
+    width: 80vh;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    z-index: -1;
+    margin-top: 5vh;
+}
+
+.arrow.project{
+    position: absolute;
+    margin-top: 101vh;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+}
+
+.project_backgroud.ccg{
+    background-color: #8e44ad;
+}
+
+.project_backgroud.UEGame{
+    background-color: #D35400;
+}
+
+.project_backgroud.CSRenders{
+    background-color: #8E44AD;
+}
+
+.project_backgroud.VRSigns{
+    background-color: #27AE60;
+}
+
+.project_backgroud.SkiTracker{
+    background-color: #16A085;
+}
+
+.project_backgroud.VRPiano{
+    background-color: #C0392B;
+}
+
+.project_backgroud.ElderBoss{
+    background-color: #2980B9;
+}
+
+.arrow.ccg{
+    border-top: 50px solid #8e44ad;
+}
+
+.arrow.UEGame{
+    border-top: 50px solid #D35400;
+}
+
+.arrow.CSRenders{
+    border-top: 50px solid #8E44AD;
+}
+
+.arrow.VRSigns{
+    border-top: 50px solid #27AE60;
+}
+
+.arrow.SkiTracker{
+    border-top: 50px solid #16A085;
+}
+
+.arrow.VRPiano{
+    border-top: 50px solid #C0392B;
+}
+
+.arrow.ElderBoss{
+    border-top: 50px solid #2980B9;
+}
+
+footer{
+    display: flex;
+    height: 25vh;
+    
+}
+
+.footer_list{
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2vh;
+}
+
+.footer_list.element > a{
+    color: #d1d1d1;
+}
+
+.footer_line{
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 100%;
+}
+
+
+
+
+.breakdown_content{
+    width:75%;
+    margin: auto;
+    margin-bottom: 10vh;
+}
+
+.breakdown_content_title{
+    text-align: left;
+    margin-bottom: 5vh;
+}
+
+.breakdown_title_line{
+    background-color: white;
+    height: 3px;
+    margin-top: -4.5vh;
+    margin-bottom: 3vh;
+}
+
+.breakdown_content_image{
+    width:45%;
+}
+
+.breakdown_content_description{
+    width:50%;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
