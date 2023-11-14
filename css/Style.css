@@ -78,8 +78,6 @@ a:hover{
     text-align: center;
 }
 
-
-
 .header_title{
     text-align: center;
     vertical-align: middle;
@@ -94,7 +92,13 @@ a:hover{
 #header_desc{
     position: relative;
     text-align: center;
-    bottom: 20vh;
+    bottom: 25vh;
+}
+
+.header_link{
+    position: relative;
+    text-align: center;
+    bottom: 22.5vh;
 }
 
 
