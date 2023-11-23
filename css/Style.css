@@ -87,6 +87,8 @@ a:hover{
 
 .header_title.breakdown{
     line-height: 15vh;
+    position: relative;
+    top: -2vh;
 }
 
 #header_desc{
@@ -137,7 +139,7 @@ a:hover{
 }
 
 .header_images_title{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 150px;
     height: 5vh;
     text-align: center;
