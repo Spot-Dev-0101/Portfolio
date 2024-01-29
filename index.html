@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/Style.css">
+    <script src="JS/Script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="panel left">
+            <h1>Name Here</h1>
+            <h2 class="title_subtitle">Game Making Gamer</h2>
+            <h3 class="title_description">Not good enough at Counter-Strike so I code :)</h3>
+
+            <div class="navigation">
+                <nav>
+                    <a class="nav_link active" href="#About" onclick="NavClick(this); DeactivateContactArrow()">About</a>
+                    <a class="nav_link" href="#Projects" onclick="NavClick(this); DeactivateContactArrow()">Projects</a>
+                    <a class="nav_link" href="#Contact" onclick="NavClick(this); ActivateContactArrow()">Contact</a>
+                    <div class="animation_active"></div>
+                  </nav>
+            </div>
+
+            <div class="arrow main">
+                <div class="arrow_top"></div>
+                <div class="arrow bottom_right"></div>
+                <div class="arrow bottom_right_down"></div>
+                <div class="arrow bottom_left"></div>
+                <div class="arrow bottom_left_down"></div>
+            </div>
+
+            <div class="socials">
+                <a href="https://google.com"><img src="Images/github.png"/></a>
+                <a href="https://google.com"><img src="Images/linkedin.png"/></a>
+                <a href="https://google.com"><img src="Images/twitter.png"/></a>
+                <a href="https://google.com"><img src="Images/email.png"/></a>
+            </div>
+
+        </div>
+
+        <div class="panel right">
+
+            <h1 id="About">About</h1>
+            <p class="main_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br>
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br><br>
+                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            <div class="main_break"></div>
+
+            <h1 id="Projects">Projects</h1>
+
+            <a href="https://google.com" target="_blank">
+                <span class="project">
+                    <div class="project_content">
+                        <h2 class="project_title">Project Title</h2>
+                        <p class="project_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <img class="project_image" src="https://hips.hearstapps.com/hmg-prod/images/champagne-beach-espiritu-santo-island-vanuatu-royalty-free-image-1655672510.jpg?crop=1.00xw:0.755xh;0,0.173xh&resize=1200:*">
+                </span>
+            </a>
+
+            <a href="https://google.com" target="_blank">
+                <span class="project">
+                    <div class="project_content">
+                        <h2 class="project_title">Project Title</h2>
+                        <p class="project_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <img class="project_image" src="https://hips.hearstapps.com/hmg-prod/images/champagne-beach-espiritu-santo-island-vanuatu-royalty-free-image-1655672510.jpg?crop=1.00xw:0.755xh;0,0.173xh&resize=1200:*">
+                </span>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
