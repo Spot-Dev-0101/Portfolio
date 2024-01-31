@@ -27,16 +27,12 @@ function ActivateContactArrow(){
     const arrow_top = document.getElementsByClassName("arrow_top")[0]
 
     for(let arrow of arrow_elements){
-        if(arrow.classList.contains("active")){
-            arrow.classList.remove("active");
-        } else{
+        if(!arrow.classList.contains("active")){
             arrow.classList.add("active");
         }
     }
 
-    if(arrow_top.classList.contains("active")){
-        arrow_top.classList.remove("active");
-    } else{
+    if(!arrow_top.classList.contains("active")){
         arrow_top.classList.add("active");
     }
 
@@ -47,5 +43,22 @@ function DeactivateContactArrow(){
     for(let arrow of arrow_elements){
         arrow.classList.remove("active");
     }
+}
+
+function scrollToTargetAdjusted(name){
+    console.log(name)
+    var element = document.getElementById(name);
+    var headerOffset = 96;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+    window.scrollTo({
+         top: offsetPosition,
+         behavior: "smooth"
+    });
+}
+
+function OpenURL(url){
+    window.open(url)
 }
 //make gradient text follow mouse

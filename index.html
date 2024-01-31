@@ -8,18 +8,17 @@
     <script src="JS/Script.js"></script>
 </head>
 <body>
-
     <div class="container">
         <div class="panel left">
-            <h1>Name Here</h1>
+            <h1>Bradley Wilson</h1>
             <h2 class="title_subtitle">Game Making Gamer</h2>
             <h3 class="title_description">Not good enough at Counter-Strike so I code :)</h3>
 
             <div class="navigation">
                 <nav>
-                    <a class="nav_link active" href="#About" onclick="NavClick(this); DeactivateContactArrow()">About</a>
-                    <a class="nav_link" href="#Projects" onclick="NavClick(this); DeactivateContactArrow()">Projects</a>
-                    <a class="nav_link" href="#Contact" onclick="NavClick(this); ActivateContactArrow()">Contact</a>
+                    <a class="nav_link active" onclick="NavClick(this); DeactivateContactArrow(); scrollToTargetAdjusted('About')">About</a>
+                    <a class="nav_link" onclick="NavClick(this); DeactivateContactArrow(); scrollToTargetAdjusted('Projects')">Projects</a>
+                    <a class="nav_link" onclick="NavClick(this); ActivateContactArrow()">Contact</a>
                     <div class="animation_active"></div>
                   </nav>
             </div>
@@ -33,10 +32,10 @@
             </div>
 
             <div class="socials">
-                <a href="https://google.com"><img src="Images/github.png"/></a>
-                <a href="https://google.com"><img src="Images/linkedin.png"/></a>
-                <a href="https://google.com"><img src="Images/twitter.png"/></a>
-                <a href="https://google.com"><img src="Images/email.png"/></a>
+                <a href="https://google.com"><img src="Images/Icons/github.png"/></a>
+                <a href="https://google.com"><img src="Images/Icons/linkedin.png"/></a>
+                <a href="https://google.com"><img src="Images/Icons/twitter.png"/></a>
+                <a href="https://google.com"><img src="Images/Icons/email.png"/></a>
             </div>
 
         </div>
@@ -53,25 +52,29 @@
 
             <h1 id="Projects">Projects</h1>
 
-            <a href="https://google.com" target="_blank">
-                <span class="project">
-                    <div class="project_content">
-                        <h2 class="project_title">Project Title</h2>
-                        <p class="project_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <img class="project_image" src="https://hips.hearstapps.com/hmg-prod/images/champagne-beach-espiritu-santo-island-vanuatu-royalty-free-image-1655672510.jpg?crop=1.00xw:0.755xh;0,0.173xh&resize=1200:*">
-                </span>
-            </a>
+            <div class="project">
+                <div class="project_content">
+                    <a href="https://github.com/Spot-Dev-0101/Salad-Info-Extractor-Server-Client"  target="_blank"><h2 class="project_title">Salad Info<img class="project_title_github" src="Images/Icons/github.png"/><img class="project_title_arrow" src="Images/Icons/arrow.png"></h2></a>
+                    <p class="project_desc">A third-party tool for <a class="project_desc_highlight" href="https://salad.com" target="_blank">Salad</a> chefs to track, store, visualize, and get notifications for earnings data across multiple machines using <a class="project_desc_highlight" href="https://discord.com/" target="_blank">Discord</a> and a web dashboard. Made with Python.</p>
+                </div>
+                <img class="project_image" src="Images/Projects/SaladInfo.webp">
+            </div>
 
-            <a href="https://google.com" target="_blank">
-                <span class="project">
-                    <div class="project_content">
-                        <h2 class="project_title">Project Title</h2>
-                        <p class="project_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <img class="project_image" src="https://hips.hearstapps.com/hmg-prod/images/champagne-beach-espiritu-santo-island-vanuatu-royalty-free-image-1655672510.jpg?crop=1.00xw:0.755xh;0,0.173xh&resize=1200:*">
-                </span>
-            </a>
+            <div class="project">
+                <div class="project_content">
+                    <a href="https://github.com/Spot-Dev-0101/Salad-Info-Extractor-Server-Client"  target="_blank"><h2 class="project_title">Salad Info<img class="project_title_github" src="Images/Icons/github.png"/><img class="project_title_arrow" src="Images/Icons/arrow.png"></h2></a>
+                    <p class="project_desc">A third-party tool for <a class="project_desc_highlight" href="https://salad.com" target="_blank">Salad</a> chefs to track, store, visualize, and get notifications for earnings data across multiple machines using <a class="project_desc_highlight" href="https://discord.com/" target="_blank">Discord</a> and a web dashboard. Made with Python.</p>
+                </div>
+                <img class="project_image" src="Images/Projects/SaladInfo.webp">
+            </div>
+
+            <div class="project">
+                <div class="project_content">
+                    <a href="https://github.com/Spot-Dev-0101/Salad-Info-Extractor-Server-Client"  target="_blank"><h2 class="project_title">Salad Info<img class="project_title_github" src="Images/Icons/github.png"/><img class="project_title_arrow" src="Images/Icons/arrow.png"></h2></a>
+                    <p class="project_desc">A third-party tool for <a class="project_desc_highlight" href="https://salad.com" target="_blank">Salad</a> chefs to track, store, visualize, and get notifications for earnings data across multiple machines using <a class="project_desc_highlight" href="https://discord.com/" target="_blank">Discord</a> and a web dashboard. Made with Python.</p>
+                </div>
+                <img class="project_image" src="Images/Projects/SaladInfo.webp">
+            </div>
         </div>
     </div>
     

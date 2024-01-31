@@ -116,10 +116,10 @@ nav a {
     text-decoration: none;
     color: white;
     cursor: pointer;
-    transition: all .5s ease 0s;
     width: 0;
     margin-left: 0.5rem;
     text-align: center;
+    transition: 0.75s;
 }
 
 nav .animation_active {
@@ -141,27 +141,32 @@ a:nth-child(3) {
     top: 100px;
 }
 
-nav a:hover, a.active{
-    transition: all .5s ease 0s;
-    width: 7rem;
+nav a:hover{
+    width: 4.8rem;
     height: 100%;
+    transition: all .5s ease 0s;
+}
+
+a.active{
+    width: 7rem !important;
+    transition: all .5s ease 0s;
 }
 
 nav .start-about, a:nth-child(1).active~.animation_active {
     width: 8rem;
     left: 0;
     top: 0px;
-    background-color: #ff006e;
+    background-color: #c8025c/*#ff006e*/;
 }
 nav .start-projects, a:nth-child(2).active~.animation_active {
     width: 8rem;
     top: 50px;
-    background-color: #C719A7;
+    background-color: #ab0f7a/*#C719A7*/;
 }
 nav .start-contact, a:nth-child(3).active~.animation_active {
     width: 8rem;
     top: 100px;
-    background-color: #8338ec;
+    background-color: #911a94/*#8338ec*/;
 }
 
 .main_break{
@@ -181,10 +186,46 @@ nav .start-contact, a:nth-child(3).active~.animation_active {
     margin-bottom: 0.5rem;
 }
 
+.project_title_arrow{
+    margin-left: 0.5rem;
+    transition: 0.25s;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    opacity: 0;
+}
+
+.project_title:hover .project_title_arrow{
+    opacity: 1;
+    margin-left: 2.25rem;
+}
+
+.project_title_github{
+    margin-left: 0.5rem;
+    transition: 0.25s;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    opacity: 0.75;
+}
+
 .project_desc{
     font-size: 14px;
     color: lightgray;
     transition: 0.25s;
+}
+
+.project_desc_highlight{
+    font-weight: bold;
+    border-bottom: solid rgba(0, 0, 0, 0) 1px;
+}
+
+.project:hover .project_desc_highlight{
+    transition: 0.25s;
+    background: -webkit-linear-gradient(60deg, #ff006e, #C719A7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: solid #C719A7 1px;
 }
 
 .project_content{
@@ -231,6 +272,11 @@ nav .start-contact, a:nth-child(3).active~.animation_active {
     border: solid 2px rgba(255, 255, 255, 1);
 }
 
+.project:hover .project_title_github{
+    transition: 0.25s;
+    opacity: 1;
+}
+
 
 .socials{
     display: flex;
@@ -261,7 +307,7 @@ nav .start-contact, a:nth-child(3).active~.animation_active {
     width: 0;
     left: -4rem;
     top: -1.75rem;
-    background: #8338ec;
+    background: #911a94;
     position: relative;
     transition: all .5s ease 0s;
     border-radius: 8px;
@@ -279,7 +325,7 @@ nav .start-contact, a:nth-child(3).active~.animation_active {
     width: 4px;
     margin-top: 5rem;
     margin-left: 4rem;
-    background: -webkit-linear-gradient(60deg, #ff006e, #8338ec);
+    background: -webkit-linear-gradient(60deg, #ff006e, #911a94);
     position: relative;
     transition: all .5s ease 0s;
     border-radius: 8px;
@@ -296,7 +342,7 @@ nav .start-contact, a:nth-child(3).active~.animation_active {
     width: 0;
     position: absolute;
     left: -4rem;
-    top: 15rem;
+    top: 15.75rem;
     transform: rotate(0);
     transition: all .5s ease 0s;
     transition-delay: 0.5s;
@@ -308,7 +354,7 @@ nav .start-contact, a:nth-child(3).active~.animation_active {
     width: 0;
     position: absolute;
     right: 0.15rem;
-    top: 15rem;
+    top: 15.75rem;
     transform: rotate(180deg);
     transition: all .5s ease 0s;
     transition-delay: 0.5s;
@@ -320,7 +366,7 @@ nav .start-contact, a:nth-child(3).active~.animation_active {
     height: 0;
     position: absolute;
     right: -13.1rem;
-    top: 15rem;
+    top: 15.75rem;
     transition: all .5s ease 0s;
 }
 
@@ -330,12 +376,12 @@ nav .start-contact, a:nth-child(3).active~.animation_active {
     height: 0;
     position: absolute;
     right: 4rem;
-    top: 15rem;
+    top: 15.75rem;
     transition: all .5s ease 0s;
 }
 
 .arrow.active{
-    height: 20.2rem;
+    height: 21rem;
     transition: all .5s ease 0s;
     transition-delay: 0.5s;
 }
@@ -356,14 +402,14 @@ nav .start-contact, a:nth-child(3).active~.animation_active {
 
 .arrow.bottom_right_down.active{
     width: 4px;
-    height: 5rem;
+    height: 4rem;
     transition: all .5s ease 0s;
     transition-delay: 1.5s;
 }
 
 .arrow.bottom_left_down.active{
     width: 4px;
-    height: 5rem;
+    height: 4rem;
     transition: all .5s ease 0s;
     transition-delay: 1.5s;
 }
