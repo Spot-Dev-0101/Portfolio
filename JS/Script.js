@@ -13,6 +13,7 @@ function NavClick(element){
     arrow_top.classList.remove("active");
 
     for(let nav of nav_elements){
+
         if(nav != element){
             nav.classList.remove("active");
         } else{
@@ -58,7 +59,32 @@ function scrollToTargetAdjusted(name){
     });
 }
 
+
+
 function OpenURL(url){
     window.open(url)
 }
 //make gradient text follow mouse
+
+$(window).scroll(function(){
+    if(isScrolledIntoView("#Projects")){
+        NavClick(document.getElementById("nav_Projects"))
+    } else{ 
+        NavClick(document.getElementById("nav_About"))
+    }
+    DeactivateContactArrow(); 
+})
+
+
+function isScrolledIntoView(elem)
+{
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+
+    return (((docViewTop + docViewBottom)/3.333 >= elemTop));
+}
+

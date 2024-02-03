@@ -1,0 +1,52 @@
+.gallery{
+    flex: 1;
+    flex-basis: 34rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+.gallery.left{
+}
+
+.gallery.middle{
+}
+
+.gallery.right{
+}
+
+.image{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 32px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 32rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image>a>img{
+    height: 100%;
+    border-radius: 32px;
+    min-width: 32rem;
+    transform: scale(1.25);
+}
+
+.image>a>img:hover{
+    transform: scale(1.275);
+}
+
+.full_image{
+    position: fixed;
+    z-index: 0;
+}
+
+.full_image>img{
+    width: 100%;
+    height: 100%;
+    min-width: 32rem;
+    transform: scale(1.25);
+}
